@@ -1,0 +1,54 @@
+@import "header.scss";
+@import "team.scss";
+@import "service.scss";
+@import "footer.scss";
+@import "slider.scss";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "OpenSans", sans-serif;
+}
+
+body {
+	font-family: "OpenSans", sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	margin: auto 0;
+}
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fixed {
+	position: fixed;
+	right: 0;
+	z-index: 99999;
+}    
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+	.fixed {
+		right: 240px;
+	}
+}
+
+
+
